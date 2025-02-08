@@ -1,0 +1,30 @@
+{
+  "name": "react-native-select-options-search",
+  "version": "1.0.0",
+  "description": "A optimized select option package for react native.",
+  "main": "index.js",
+  "react-native": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/structlooper/react-native-select-option.git"
+  },
+  "author": "structlooper",
+  "license": "MIT",
+  "keywords": ["react-native","select-option","select-option-search","search-option","select","dropdown","lazyload","lazyload-dropdown", "package", "component"],
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-native": ">=0.65.0"
+  },
+  "devDependencies": {
+    "react": "^18.0.0",
+    "react-native": "^0.75.0"
+  },
+
+  "files": [
+    "index.js",
+    "includes/colors.js",
+    "includes/constants.js",
+    "package.json",
+    "README.md"
+  ]
+}
