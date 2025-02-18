@@ -1,6 +1,6 @@
 {
   "name": "react-native-select-options-search",
-  "version": "1.2.0",
+  "version": "1.1.1",
   "description": "A optimized select option package for react native.",
   "main": "SelectOption.tsx",
   "react-native": "SelectOption.tsx",
