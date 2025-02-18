@@ -13,7 +13,7 @@ Effortlessly manage large datasets and enable seamless search functionality for 
   <a href="https://github.com/structlooper/react-native-select-options-search">
     <img src="https://img.shields.io/github/stars/structlooper/react-native-select-options-search?color=blue&label=GitHub%20Stars&logo=github" alt="GitHub stars" />
   </a>
-  <a href="https://github.com/structlooper/react-native-select-options-search/blob/main/LICENSE">
+  <a href="https://github.com/structlooper/react-native-select-options-search/blob/master/LICENSE">
     <img src="https://img.shields.io/github/license/structlooper/react-native-select-options-search?color=blue&label=License" alt="License" />
   </a>
   <a href="https://www.npmjs.com/package/react-native-select-options-search">
