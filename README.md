@@ -3,6 +3,23 @@
 Effortlessly manage large datasets and enable seamless search functionality for option selection in React Native applications. With features inspired by web lazy-loading, this package is perfect for handling extensive options efficiently.
 
 ---
+<p align="center">
+  <a href="https://www.npmjs.com/package/react-native-select-options-search">
+    <img src="https://img.shields.io/npm/v/react-native-select-options-search?color=brightgreen&label=npm&logo=npm" alt="npm version" />
+  </a>
+  <a href="https://github.com/structlooper/react-native-select-options-search/issues">
+    <img src="https://img.shields.io/github/issues/structlooper/react-native-select-options-search?color=yellow&label=issues&logo=github" alt="GitHub issues" />
+  </a>
+  <a href="https://github.com/structlooper/react-native-select-options-search">
+    <img src="https://img.shields.io/github/stars/structlooper/react-native-select-options-search?color=blue&label=GitHub%20Stars&logo=github" alt="GitHub stars" />
+  </a>
+  <a href="https://github.com/structlooper/react-native-select-options-search/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/structlooper/react-native-select-options-search?color=blue&label=License" alt="License" />
+  </a>
+  <a href="https://www.npmjs.com/package/react-native-select-options-search">
+    <img src="https://img.shields.io/npm/dt/react-native-select-options-search?color=purple&label=Downloads&logo=npm" alt="npm downloads" />
+  </a>
+</p>
 
 ## **Features**
 - 🌟 **Optimized for Large Datasets**: Smoothly handle expensive options selection with lazy-loading.

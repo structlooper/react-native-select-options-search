@@ -59,45 +59,45 @@ const SelectOption: React.FC<SelectOptionProps> = ({
     return (
         <View>
             <TouchableOpacity style={selectButtonStyle} onPress={toggleModal}>
-                <Text style={{ color: colors.dark, fontSize: size.text, fontWeight: 'normal' }}>
-                    {(selectedValueState.state === null
-                        || typeof selectedValueState.state === 'number' )?
-                        placeHolder :
-                        selectedValueState.state[showLabel]}
-                </Text>
-            </TouchableOpacity>
+    <Text style={{ color: colors.dark, fontSize: size.text, fontWeight: 'normal' }}>
+    {(selectedValueState.state === null
+        || typeof selectedValueState.state === 'number' )?
+        placeHolder :
+        selectedValueState.state[showLabel]}
+    </Text>
+    </TouchableOpacity>
 
-            <Modal visible={visible} transparent={true} onRequestClose={toggleModal}>
-                <View style={styles.modalContainer}>
-                    <View style={styles.modalContent}>
-                        <TextInput
-                            style={styles.searchInput}
-                            placeholder={`Search...`}
-                            onChangeText={(text) => setSearchQuery(text)}
-                            value={searchQuery}
-                        />
-                        <TouchableOpacity onPress={() => handleItemPress(null)} style={styles.listItem}>
-                            <Text style={styles.itemText}>-- {placeHolder} --</Text>
-                        </TouchableOpacity>
-                        <FlatList
-                            data={filteredItems}
-                            renderItem={({ item }) => (
-                                <TouchableOpacity onPress={() => handleItemPress(item)} style={styles.listItem}>
-                                    <Text style={styles.itemText}>{item[showLabel]}</Text>
-                                </TouchableOpacity>
-                            )}
-                            keyExtractor={(item, index) => index.toString()}
-                            onEndReached={loadMoreItems}
-                            onEndReachedThreshold={0.1}
-                        />
-                        <TouchableOpacity style={styles.closeButton} onPress={toggleModal}>
-                            <Text style={styles.closeButtonText}>Close</Text>
-                        </TouchableOpacity>
-                    </View>
-                </View>
-            </Modal>
+    <Modal visible={visible} transparent={true} onRequestClose={toggleModal}>
+    <View style={styles.modalContainer}>
+    <View style={styles.modalContent}>
+    <TextInput
+        style={styles.searchInput}
+    placeholder={`Search...`}
+    onChangeText={(text) => setSearchQuery(text)}
+    value={searchQuery}
+    />
+    <TouchableOpacity onPress={() => handleItemPress(null)} style={styles.listItem}>
+    <Text style={styles.itemText}>-- {placeHolder} --</Text>
+        </TouchableOpacity>
+        <FlatList
+    data={filteredItems}
+    renderItem={({ item }) => (
+        <TouchableOpacity onPress={() => handleItemPress(item)} style={styles.listItem}>
+    <Text style={styles.itemText}>{item[showLabel]}</Text>
+        </TouchableOpacity>
+)}
+    keyExtractor={(item, index) => index.toString()}
+    onEndReached={loadMoreItems}
+    onEndReachedThreshold={0.1}
+    />
+    <TouchableOpacity style={styles.closeButton} onPress={toggleModal}>
+    <Text style={styles.closeButtonText}>Close</Text>
+        </TouchableOpacity>
         </View>
-    );
+        </View>
+        </Modal>
+        </View>
+);
 };
 
 const styles = StyleSheet.create({
