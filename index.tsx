@@ -60,7 +60,10 @@ const SelectOption: React.FC<SelectOptionProps> = ({
         <View>
             <TouchableOpacity style={selectButtonStyle} onPress={toggleModal}>
                 <Text style={{ color: colors.dark, fontSize: size.text, fontWeight: 'normal' }}>
-                    {selectedValueState.state === null ? placeHolder : selectedValueState.state[showLabel]}
+                    {(selectedValueState.state === null
+                        || typeof selectedValueState.state === 'number' )?
+                        placeHolder :
+                        selectedValueState.state[showLabel]}
                 </Text>
             </TouchableOpacity>
 
