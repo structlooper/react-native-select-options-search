@@ -44,7 +44,7 @@ Here’s an example to get you started:
 import React, { useState } from 'react';
 import { Text, View } from 'react-native';
 import { Styles } from '../utils/styles';
-import SelectOption from 'react-native-select-options-search';
+import SelectOption from 'react-native-select-options-search/SelectOption';
 
 const Playground = () => {
   const [selectedFruit, setSelectedValue] = useState(null);
